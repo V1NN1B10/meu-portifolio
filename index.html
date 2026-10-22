@@ -1,66 +1,353 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meu portifólio</title>
-<link rel="stylesheet" href="styles.css/style.css" />
+
+    <meta name="description" content="Portfólio pessoal de [SEU NOME], estudante e desenvolvedor de tecnologia.">
+
+    <title>Vinicius Almeida | Portfólio</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/png" href="./styles/auto-confianca.png">
 </head>
-<body>
 
-    <div class="pagina">
+<body id="top">
 
-        <nav>
-            <ul class="menu-links">
-                <li>
-                    <a href="index.html">sobre mim</a>
-                </li>
-                <li>
-                    <a href="projeto.html">projetos</a>
-                </li>
-                <li>
-                    <a href="contato.html">contato</a>
-                </li>
+    <!-- Cabeçalho e navegação -->
+    <header class="cabecalho">
+
+        <nav class="navegacao" aria-label="Navegação principal">
+
+            <a href="index.html" class="logo">
+                Vincius Almeida
+            </a>
+
+            <ul class="menu-navegacao">
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
+
         </nav>
-        
-        <header id="cabeçalho-perfil">
-            <div class="centralizado">
-                <img src="" alt="minha foto de perfil">
+
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Apresentação -->
+        <section class="apresentacao" id="inicio">
+
+            <div class="apresentacao-texto">
+
+                <p class="subtitulo">OLÁ, SEJA BEM-VINDO(A)!</p>
+
+                <h1>
+                    Eu sou <span>Vinicius</span>
+                </h1>
+
+                <h2>
+                    Desenvolvimento Web | Front-end e Back-end
+                </h2>
+
+                <p class="descricao">
+
+                <p class="descricao">
+                    Sou estudante de desenvolvimento web, focado em construir
+                    soluções práticas e aprimorar minhas habilidades em
+                    HTML, CSS, JavaScript, Python e Flask API. Busco transformar
+                    conhecimento em projetos reais, evoluir continuamente
+                    como profissional e contribuir com soluções que gerem valor.
+                </p>
+
+                </p>
+
+                <div class="botoes-apresentacao">
+
+                    <a href="https://github.com/V1NN1B10" class="botao botao-principal">
+                        Ver meus projetos
+                    </a>
+
+                    <a href="contato.html" class="botao botao-secundario">
+                        Entrar em contato
+                    </a>
+
+                </div>
+
             </div>
-            <h1>Vinicius Almeida Reis</h1>
-            <H2>Desenvolvedor front-end</H2>
-        </header>
 
-        <main id="conteudo-principal">
-            <section id="sobre mim">
-                <h3>sobre mim</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi suscipit laudantium officia, fugit nihil voluptas fugiat magnam dolore dolores. Sapiente tempore animi commodi corporis expedita tempora totam ipsam quisquam. Iste.</p>
-            </section>
-            <section id="formacao">
-                <h3>formação</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, vel itaque corrupti magni nihil laboriosam similique rem perferendis, fuga quas veniam aperiam temporibus molestias, eaque suscipit commodi quia minima consequuntur!</p>
-            </section>
-            <section>
-            <h3>cursos</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam fugit sint suscipit voluptatibus odit, deserunt voluptatem autem est alias neque dolorum illum reprehenderit, error ex omnis enim sunt facilis?</p>
-            </section>
-            </main>
+            <div class="apresentacao-imagem">
 
-            <footer id="rodape-social">
-                <a class="link-social" href="https://github.com/V1NN1B10" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="foto pessoal">
-                    <p>github</p>
-                </a>
-                  <a class="link-social" href="www.linkedin.com/in/viniciusalmeidareis" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="foto pessoal">
-                    <p>linkedin</p>
-                </a>
-                  <a class="link-social" href="" target="_blank" rel="noopener noreferrer">
-                    <img src="https://www.instagram.com/viniciusalmeida_?stkn=OHRjYW90MHVjejIx&utm_source=qr" alt="instagram">
-                    <p>instagram</p>
-                </a>
-            </footer>
-    </div>  
+                <img src="./styles/WhatsApp Image 2026-10-22 at 12.59.56.jpeg" alt="Foto de perfil do Vinicius"
+                    class="foto-perfil">
+
+            </div>
+
+        </section>
+
+        <!-- Sobre mim -->
+        <section class="secao" id="sobre-mim">
+
+            <div class="titulo-secao">
+                <p class="subtitulo">CONHEÇA MINHA HISTÓRIA</p>
+                <h2>Sobre mim</h2>
+            </div>
+
+
+            <div class="sobre-conteudo">
+
+                <p>
+                    Sou uma pessoa dedicada ao aprendizado e à evolução
+                    constante. Comecei a estudar tecnologia por interesse
+                    em entender como os sistemas e as aplicações funcionam
+                    e como podem resolver problemas do dia a dia.
+                </p>
+
+                <p>
+                    Atualmente, estou desenvolvendo minhas habilidades em
+                    HTML, CSS, JavaScript e Python, com foco na construção
+                    de projetos práticos e no fortalecimento da minha base
+                    em programação. Busco aprender continuamente e aplicar
+                    meus conhecimentos de forma cada vez mais eficiente.
+                </p>
+
+                <p>
+                    Meu objetivo é conquistar minha primeira oportunidade
+                    na área de tecnologia, contribuir com dedicação,
+                    responsabilidade e vontade de aprender, e crescer
+                    profissionalmente por meio de desafios e experiências
+                    reais.
+                </p>
+
+            </div>
+
+
+        </section>
+
+        <!-- Habilidades -->
+
+        <div class="container-skills">
+
+            <span class="skill-tag">HTML5 e CSS3</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python e FlaskApi</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+
+        </div>
+
+
+        <!-- Projetos -->
+        <section class="secao" id="projetos">
+
+            <div class="titulo-secao">
+                <p class="subtitulo">O QUE ESTOU DESENVOLVENDO</p>
+                <h2>Meus projetos</h2>
+            </div>
+
+            <div class="container-projetos">
+
+                <!-- Projeto 1 -->
+                <article class="card-projeto">
+
+                    <img src="./styles/Captura de tela 2026-10-22 140112.png" alt="Imagem do projeto 1"
+                        class="imagem-projeto">
+
+                    <div class="conteudo-projeto">
+
+                        <h3>Barbearia</h3>
+
+                        <p>
+                            Barbearia
+
+                            Site desenvolvido para apresentar uma barbearia, seus serviços e informações de contato, com
+                            foco em um design elegante, sofisticado e adaptável a diferentes dispositivos.
+                        </p>
+
+                        <p class="tecnologias-projeto">
+                            HTML5, CSS3, Figma, JavaScript, Python e FlaskApi
+                        </p>
+
+                        <div class="links-projeto">
+
+                            <a href="https://github.com/V1NN1B10/projeto_barbearia" target="_blank"
+                                rel="noopener noreferrer">
+                                Código no GitHub
+                            </a>
+
+                            <a href="https://v1nn1b10.github.io/projeto_barbearia/" target="_blank"
+                                rel="noopener noreferrer">
+                                Ver projeto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="card-projeto">
+
+                    <img src="./styles/Captura de tela 2026-10-22 133451.png" alt="Imagem do projeto 2"
+                        class="imagem-projeto">
+
+                    <div class="conteudo-projeto">
+
+                        <h3>Site de Apresentação</h3>
+
+                        <p>
+                            Site desenvolvido com HTML5 e CSS3 para praticar desenvolvimento web, incluindo navegação,
+                            seção principal, apresentação de serviços e galeria de trabalhos. Projeto criado durante
+                            meus estudos de front-end.
+                        </p>
+
+                        <p class="tecnologias-projeto">
+                        <p class="tecnologias-projeto">
+                            HTML5 • CSS3
+                        </p>
+                        </p>
+
+                        <div class="links-projeto">
+
+                            <a href="https://github.com/V1NN1B10/projeto-web/tree/main" target="_blank"
+                                rel="noopener noreferrer">
+                                Código no GitHub
+                            </a>
+
+                            <a href="https://v1nn1b10.github.io/projeto-web/" target="_blank" rel="noopener noreferrer">
+                                Ver projeto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Formação -->
+        <section class="secao" id="formacao">
+
+            <div class="titulo-secao">
+                <p class="subtitulo">MINHA JORNADA</p>
+                <h2>Formação acadêmica</h2>
+            </div>
+
+            <div class="card-informacao">
+                <h3>Desenvolvimento Front-End</h3>
+                <p>Instituto PROA</p>
+                <p>Cursando</p>
+            </div>
+
+            <div class="card-informacao">
+                <h3>Python</h3>
+                <p>Santander</p>
+            </div>
+
+            <div class="card-informacao">
+                <h3>Informática</h3>
+                <p>SENAI</p>
+            </div>
+
+        </section>
+
+        <!-- Cursos -->
+        <section class="secao" id="cursos">
+
+            <div class="titulo-secao">
+                <p class="subtitulo">APRENDIZADO CONTÍNUO</p>
+                <h2>Cursos e certificações</h2>
+            </div>
+
+            <ul class="lista-cursos">
+
+                <li>
+                    <strong>Desenvolvimento Front-End</strong>
+                    — Instituto PROA — Cursando
+                </li>
+
+                <li>
+                    <strong>Python</strong>
+                    — Santander — Concluido
+                </li>
+
+                <li>
+                    <strong>Informática</strong>
+                    — SENAI — Concluido
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- Currículo -->
+        <section class="secao secao-curriculo" id="curriculo">
+
+            <div class="titulo-secao">
+                <p class="subtitulo">MINHA EXPERIÊNCIA</p>
+                <h2>Currículo</h2>
+            </div>
+
+            <p>
+                Confira meu currículo para conhecer melhor minha formação,
+                minhas habilidades e meus objetivos profissionais.
+            </p>
+
+            <a href="https://drive.google.com/file/d/1IMDZjPmses2p5Xe11gBIuO6k8QJGyZNP/view?usp=sharing" class="botao botao-principal" download>
+                Baixar currículo
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <div class="redes-sociais">
+
+            <a href="https://github.com/V1NN1B10" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/vinnib10/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+
+            <a href="https://www.instagram.com/viniciusalmeida_/" target="_blank" rel="noopener noreferrer">
+                Instagram
+            </a>
+
+        </div>
+
+        <p>
+            &copy; <span id="ano-atual"></span> Vinicius Almeida.
+            Todos os direitos reservados.
+        </p>
+
+        <a href="#top" class="btn-topo">
+            Voltar ao topo ↑
+        </a>
+
+    </footer>
+
+    <script>
+        document.getElementById("ano-atual").textContent =
+            new Date().getFullYear();
+    </script>
+
 </body>
+
 </html>

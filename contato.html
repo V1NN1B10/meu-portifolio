@@ -1,12 +1,206 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contato</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="Entre em contato com Vinicius Almeida por e-mail, WhatsApp ou redes sociais.">
+
+    <title>Contato | Vinicius Almeida</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
-<body>
-    
+
+<body id="top">
+
+    <header class="cabecalho">
+        <nav class="navegacao" aria-label="Navegação principal">
+
+            <a href="index.html" class="logo">
+                Vinicius Almeida
+            </a>
+
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#sobre-mim">Sobre mim</a></li>
+                <li><a href="index.html#habilidades">Habilidades</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="index.html#formacao">Formação</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao secao-contato">
+
+            <div class="titulo-secao">
+                <p class="subtitulo">VAMOS CONVERSAR?</p>
+
+                <h1>Entre em contato</h1>
+
+                <p>
+                    Tem alguma oportunidade, dúvida ou projeto em mente?
+                    Ficarei feliz em receber sua mensagem!
+                </p>
+            </div>
+
+            <div class="container-contato">
+
+                <div class="informacoes-contato">
+
+                    <h2>Fale comigo</h2>
+
+                    <p>
+                        Escolha uma das opções abaixo para entrar em contato.
+                    </p>
+
+                    <div class="card-contato">
+                        <h3>WhatsApp</h3>
+
+                        <p>
+                            Envie uma mensagem diretamente pelo WhatsApp.
+                        </p>
+
+                        <a href="https://wa.me/5511930644441"
+                           class="botao botao-principal"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Conversar pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="card-contato">
+                        <h3>GitHub</h3>
+
+                        <p>
+                            Conheça meus projetos e acompanhe meu código.
+                        </p>
+
+                        <a href="https://github.com/V1NN1B10"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Acessar GitHub
+                        </a>
+                    </div>
+
+                    <div class="card-contato">
+                        <h3>LinkedIn</h3>
+
+                        <p>
+                            Confira meu perfil profissional.
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/vinnib10/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Acessar LinkedIn
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="formulario-container">
+
+                    <h2>Envie uma mensagem</h2>
+
+                    <p>
+                        Preencha os campos para enviar sua mensagem por e-mail.
+                    </p>
+
+                    <form action="https://formsubmit.co/vreis1178@gmail.com"
+                          method="POST"
+                          id="formularioContato"
+                          class="formulario-contato">
+
+                        <input type="hidden" name="_subject"
+                               value="Nova mensagem pelo portfólio">
+
+                        <input type="hidden" name="_template"
+                               value="table">
+
+                        <div class="campo-formulario">
+                            <label for="nome">Seu nome</label>
+
+                            <input type="text"
+                                   id="nome"
+                                   name="nome"
+                                   placeholder="Digite seu nome"
+                                   autocomplete="name"
+                                   required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="email">Seu e-mail</label>
+
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="seu@email.com"
+                                   autocomplete="email"
+                                   required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="assunto">Assunto</label>
+
+                            <input type="text"
+                                   id="assunto"
+                                   name="assunto"
+                                   placeholder="Ex.: oportunidade profissional"
+                                   required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="mensagem">Sua mensagem</label>
+
+                            <textarea id="mensagem"
+                                      name="mensagem"
+                                      rows="6"
+                                      placeholder="Escreva sua mensagem..."
+                                      required></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="botao botao-principal">
+                            Enviar mensagem
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+
+        <div class="redes-sociais">
+            <a href="index.html">Início</a>
+            <a href="index.html#projetos">Projetos</a>
+            <a href="index.html#formacao">Formação</a>
+        </div>
+
+        <p>
+            &copy; <span id="ano-atual"></span> Vinicius Almeida.
+            Todos os direitos reservados.
+        </p>
+
+        <a href="#top" class="btn-topo">
+            Voltar ao topo ↑
+        </a>
+
+    </footer>
+
+    <script>
+        document.getElementById("ano-atual").textContent =
+            new Date().getFullYear();
+    </script>
+
 </body>
 </html>

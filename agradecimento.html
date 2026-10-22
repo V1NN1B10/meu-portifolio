@@ -1,12 +1,134 @@
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agradecimento</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="Página de agradecimento do portfólio de [SEU NOME].">
+
+    <title>Obrigado pelo contato | [SEU NOME]</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
 </head>
-<body>
-    
+
+<body id="top">
+
+    <!-- Cabeçalho e navegação -->
+    <header class="cabecalho">
+
+        <nav class="navegacao" aria-label="Navegação principal">
+
+            <a href="index.html" class="logo">
+                [SEU NOME]
+            </a>
+
+            <ul class="menu-navegacao">
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="index.html#sobre-mim">Sobre mim</a>
+                </li>
+
+                <li>
+                    <a href="index.html#habilidades">Habilidades</a>
+                </li>
+
+                <li>
+                    <a href="projeto.html">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="index.html#formacao">Formação</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <section class="secao secao-agradecimento">
+
+            <div class="card-agradecimento">
+
+                <div class="icone-agradecimento" aria-hidden="true">
+                    ✓
+                </div>
+
+                <p class="subtitulo">MENSAGEM RECEBIDA</p>
+
+                <h1>Obrigado pelo contato!</h1>
+
+                <p>
+                    Agradeço pelo seu interesse em entrar em contato comigo.
+                    Será um prazer conversar com você!
+                </p>
+
+                <p>
+                    Assim que possível, responderei à sua mensagem.
+                </p>
+
+                <div class="botoes-apresentacao">
+
+                    <a href="index.html" class="botao botao-principal">
+                        Voltar ao início
+                    </a>
+
+                    <a href="projeto.html" class="botao botao-secundario">
+                        Conhecer meus projetos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <div class="redes-sociais">
+
+            <a href="index.html">Início</a>
+
+            <a href="projeto.html">Projetos</a>
+
+            <a href="contato.html">Contato</a>
+
+        </div>
+
+        <p>
+            &copy; <span id="ano-atual"></span> [SEU NOME].
+            Todos os direitos reservados.
+        </p>
+
+        <a href="#top" class="btn-topo">
+            Voltar ao topo ↑
+        </a>
+
+    </footer>
+
+    <script>
+        document.getElementById("ano-atual").textContent =
+            new Date().getFullYear();
+    </script>
+
 </body>
+
 </html>
+```
